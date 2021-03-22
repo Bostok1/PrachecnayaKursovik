@@ -162,7 +162,7 @@ namespace Prachecnaya
                 textBox_averageTimeInSMO1.Text = (average_time_in_SMO1 / counter_time_in_smo1).ToString();
                
 
-                textBox_averageTimeInQuery1.Text = (average_time_in_query1 / counter_time_in_query1).ToString();
+             
                 
 
                 busyCanals1 += (double)SMO.AverageBusyCanals();
@@ -401,9 +401,8 @@ namespace Prachecnaya
             start();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
             if (information.countOfMachine != 0)
             {
                 information.countOfMachine--;
@@ -450,6 +449,12 @@ namespace Prachecnaya
             {
                 label10.ForeColor = Color.Red;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+           
         }
 
         private void label5_Click(object sender, EventArgs e)

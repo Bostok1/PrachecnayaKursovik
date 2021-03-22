@@ -40,7 +40,6 @@ namespace Prachecnaya
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.service = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,8 +62,6 @@ namespace Prachecnaya
             this.textBox_averageTimeOfBusyCanals2 = new System.Windows.Forms.TextBox();
             this.textBox_averageTimeOfBusyCanals1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox_averageTimeInQuery1 = new System.Windows.Forms.TextBox();
             this.textBox_averageTimeInSMO1 = new System.Windows.Forms.TextBox();
             this.label_averageTimeInSMO = new System.Windows.Forms.Label();
             this.textBox_MidleQualityOrdersInQuery1 = new System.Windows.Forms.TextBox();
@@ -72,6 +69,7 @@ namespace Prachecnaya
             this.textBox_MidleQualityOrdersInSMO1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox_lambda = new System.Windows.Forms.TextBox();
             this.label_lambda = new System.Windows.Forms.Label();
             this.textBox_l = new System.Windows.Forms.TextBox();
@@ -80,7 +78,7 @@ namespace Prachecnaya
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -209,17 +207,6 @@ namespace Prachecnaya
             this.label5.TabIndex = 10;
             this.label5.Text = "label5";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(143, 450);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 41);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Оформить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -402,8 +389,6 @@ namespace Prachecnaya
             this.groupBox2.Controls.Add(this.textBox_averageTimeOfBusyCanals2);
             this.groupBox2.Controls.Add(this.textBox_averageTimeOfBusyCanals1);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox_averageTimeInQuery1);
             this.groupBox2.Controls.Add(this.textBox_averageTimeInSMO1);
             this.groupBox2.Controls.Add(this.label_averageTimeInSMO);
             this.groupBox2.Controls.Add(this.textBox_MidleQualityOrdersInQuery1);
@@ -414,7 +399,7 @@ namespace Prachecnaya
             this.groupBox2.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox2.Size = new System.Drawing.Size(479, 465);
+            this.groupBox2.Size = new System.Drawing.Size(479, 312);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             // 
@@ -446,28 +431,9 @@ namespace Prachecnaya
             this.label11.TabIndex = 18;
             this.label11.Text = "Среднее число занятых каналов:";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(66, 290);
-            this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(318, 17);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Среднее время пребывания заявки в очереди:";
-            // 
-            // textBox_averageTimeInQuery1
-            // 
-            this.textBox_averageTimeInQuery1.Location = new System.Drawing.Point(139, 329);
-            this.textBox_averageTimeInQuery1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_averageTimeInQuery1.Name = "textBox_averageTimeInQuery1";
-            this.textBox_averageTimeInQuery1.ReadOnly = true;
-            this.textBox_averageTimeInQuery1.Size = new System.Drawing.Size(175, 22);
-            this.textBox_averageTimeInQuery1.TabIndex = 15;
-            // 
             // textBox_averageTimeInSMO1
             // 
-            this.textBox_averageTimeInSMO1.Location = new System.Drawing.Point(139, 243);
+            this.textBox_averageTimeInSMO1.Location = new System.Drawing.Point(149, 242);
             this.textBox_averageTimeInSMO1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox_averageTimeInSMO1.Name = "textBox_averageTimeInSMO1";
             this.textBox_averageTimeInSMO1.ReadOnly = true;
@@ -477,12 +443,12 @@ namespace Prachecnaya
             // label_averageTimeInSMO
             // 
             this.label_averageTimeInSMO.AutoSize = true;
-            this.label_averageTimeInSMO.Location = new System.Drawing.Point(75, 206);
+            this.label_averageTimeInSMO.Location = new System.Drawing.Point(96, 206);
             this.label_averageTimeInSMO.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_averageTimeInSMO.Name = "label_averageTimeInSMO";
-            this.label_averageTimeInSMO.Size = new System.Drawing.Size(293, 17);
+            this.label_averageTimeInSMO.Size = new System.Drawing.Size(258, 17);
             this.label_averageTimeInSMO.TabIndex = 12;
-            this.label_averageTimeInSMO.Text = "Среднее время пребывания заявки в СМО:";
+            this.label_averageTimeInSMO.Text = "Среднее время пребывания заявки в:";
             // 
             // textBox_MidleQualityOrdersInQuery1
             // 
@@ -513,12 +479,12 @@ namespace Prachecnaya
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(123, 36);
+            this.label14.Location = new System.Drawing.Point(105, 37);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(207, 17);
+            this.label14.Size = new System.Drawing.Size(250, 17);
             this.label14.TabIndex = 6;
-            this.label14.Text = "Среднее число заявок в СМО:";
+            this.label14.Text = "Среднее число заявок в Прачечной:";
             // 
             // groupBox1
             // 
@@ -539,6 +505,18 @@ namespace Prachecnaya
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(112, 302);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(243, 39);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Запустить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // textBox_lambda
             // 
             this.textBox_lambda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -547,7 +525,7 @@ namespace Prachecnaya
             this.textBox_lambda.Name = "textBox_lambda";
             this.textBox_lambda.Size = new System.Drawing.Size(164, 30);
             this.textBox_lambda.TabIndex = 8;
-            this.textBox_lambda.Text = "1000";
+            this.textBox_lambda.Text = "100";
             // 
             // label_lambda
             // 
@@ -578,7 +556,7 @@ namespace Prachecnaya
             this.textBox_m.Name = "textBox_m";
             this.textBox_m.Size = new System.Drawing.Size(320, 30);
             this.textBox_m.TabIndex = 4;
-            this.textBox_m.Text = "кол-во мест в очереди";
+            this.textBox_m.Text = "кол-во мест в очереди на машинку";
             // 
             // textBox_n
             // 
@@ -588,7 +566,7 @@ namespace Prachecnaya
             this.textBox_n.Name = "textBox_n";
             this.textBox_n.Size = new System.Drawing.Size(320, 30);
             this.textBox_n.TabIndex = 3;
-            this.textBox_n.Text = "кол-во каналов";
+            this.textBox_n.Text = "кол-во машинок";
             // 
             // label19
             // 
@@ -623,23 +601,23 @@ namespace Prachecnaya
             this.label21.TabIndex = 0;
             this.label21.Text = "n=";
             // 
-            // button2
+            // button4
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(112, 302);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 39);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Запустить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button4.Location = new System.Drawing.Point(139, 462);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(99, 41);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Оформить";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1010);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label10);
@@ -650,7 +628,6 @@ namespace Prachecnaya
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -691,7 +668,6 @@ namespace Prachecnaya
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID1;
@@ -714,8 +690,6 @@ namespace Prachecnaya
         private System.Windows.Forms.TextBox textBox_averageTimeOfBusyCanals2;
         private System.Windows.Forms.TextBox textBox_averageTimeOfBusyCanals1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox_averageTimeInQuery1;
         private System.Windows.Forms.TextBox textBox_averageTimeInSMO1;
         private System.Windows.Forms.Label label_averageTimeInSMO;
         private System.Windows.Forms.TextBox textBox_MidleQualityOrdersInQuery1;
@@ -732,6 +706,7 @@ namespace Prachecnaya
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }
 
